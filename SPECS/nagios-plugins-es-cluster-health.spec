@@ -1,10 +1,10 @@
 %define debug_package %{nil}
 
-%define commit a649f2a
+%define commit 8e0dc1d
 
 Summary:	Nagios plugin - check_es_cluster_health
 Name:		nagios-plugins-es-cluster-health
-Version:	1.0
+Version:	1.1
 Release:	1.vortex%{?dist}
 Vendor:		Vortex RPM
 License:	GPLv3
@@ -37,6 +37,9 @@ rm -rf %{buildroot}
 %{_libdir}/nagios/plugins/check_es_cluster_health
 
 %changelog
+* Wed Jul 11 2012  Ilya A. Otyutskiy <sharp@thesharp.ru> - 1.1-1.vortex
+- New upstream release.
+
 * Wed Jul 11 2012  Ilya A. Otyutskiy <sharp@thesharp.ru> - 1.0-1.vortex
 - Initial packaging for Enterprise Linux.
 
